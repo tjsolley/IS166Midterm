@@ -15,9 +15,12 @@
             width: 100vw;
             height: 100vh;
         }
+        img {
+            object-fit: contain;
+        }
 
         h2 {
-
+            text-decoration-color: #F4F1BB;
             font-weight: bold;
             font-size: 18px;
         }
@@ -35,24 +38,25 @@
             height: 100%;
             grid-row-gap: 1em;
         }
+
         .logo-container {
-      height: 100%;
-      float: left;
-      margin-right: 20px;
-    }
+            height: 100%;
+            float: left;
+            margin-right: 20px;
+        }
 
-    .logo-container {
-      height: 100%;
-      float: left;
-      margin-right: 20px;
-    }
+        .logo-container {
+            height: 100%;
+            float: left;
+            margin-right: 20px;
+        }
 
-    .logo-container>img {
-      object-fit: cover;
-      display: block;
-      width: 100px;
-      margin: 10px;
-    }
+        .logo-container>img {
+            object-fit: cover;
+            display: block;
+            width: 100px;
+            margin: 10px;
+        }
 
         .r1,
         .r3 {
@@ -74,6 +78,9 @@
         .r2 {
             height: 100%;
             background-color: #F4F1BB;
+        }
+        .r1 {
+            padding-left: 5px;
         }
 
         .three-column {
@@ -107,6 +114,7 @@
         }
 
         .text-center {
+            object-fit: contain;
             padding-bottom: 15px;
             border-bottom: 1px solid #E6EBE0;
             text-align: center;
@@ -133,6 +141,7 @@
 </head>
 
 <body class="main-container-grid">
+    
     <div class="r1">
         <h2>Gourmet Coffee & Tea</h2>
     </div>
@@ -147,12 +156,15 @@
             </ul>
         </div>
         <div class="c2">
-            <h2 class="text-center h2-content">Recent Products</h2>
+            <h2 class="text-center h2-content">Gallery</h2>
             <img src="./img/image_1.jpeg">
             <img src="./img/image_2.jpeg">
             <img src="./img/image_3.jpeg">
             <img src="./img/image_4.jpeg">
             <img src="./img/image_5.jpeg">
+            <img src="./img/image_4.jpeg">
+            <img src="./img/image_2.jpeg">
+            <img src="./img/image_3.jpeg">
         </div>
         <div class="c3">
             <h2 class="text-center">Recent Products</h2>
@@ -162,5 +174,4 @@
         Copyright 2021 - For educational purpose only! No orders shall be fulfilled!
     </div>
 </body>
-
 </html>
