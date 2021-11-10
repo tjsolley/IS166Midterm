@@ -1,9 +1,166 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Tyler Solley</title>
+    <title>Tyler Solley - IS106Midterm</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+
+        body,
+        html {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        h2 {
+
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .h2-content {
+            width: 100%;
+            border-bottom: 1px solid #E6EBE0;
+            height: 22px;
+            grid-column: 1 / 5;
+        }
+
+        .main-container-grid {
+            display: grid;
+            grid-template-rows: 1fr 13fr 1fr;
+            height: 100%;
+            grid-row-gap: 1em;
+        }
+        .logo-container {
+      height: 100%;
+      float: left;
+      margin-right: 20px;
+    }
+
+    .logo-container {
+      height: 100%;
+      float: left;
+      margin-right: 20px;
+    }
+
+    .logo-container>img {
+      object-fit: cover;
+      display: block;
+      width: 100px;
+      margin: 10px;
+    }
+
+        .r1,
+        .r3 {
+            width: 100%;
+            display: grid;
+            padding: 1em;
+            background-color: #9BC1BC;
+        }
+
+        h3 {
+            text-decoration: #F4F1BB
+        }
+
+        .r3 {
+            align-items: center;
+            text-align: center;
+        }
+
+        .r2 {
+            height: 100%;
+            background-color: #F4F1BB;
+        }
+
+        .three-column {
+            display: grid;
+            grid-template-columns: 2fr 8fr 3fr;
+            background-color: #F4F1BB;
+            grid-column-gap: 1em;
+        }
+
+        .c1 {
+            min-width: 200px;
+        }
+
+        .c1,
+        .c3 {
+            background-color: #9BC1BC;
+        }
+
+        .c2 {
+            grid-gap: 1em;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* grid-template-rows: 1fr 1fr 1fr; */
+            grid-auto-rows: min-content;
+        }
+
+        .c2>img {
+            width: 100%;
+            align-self: center;
+            max-height: 130px;
+        }
+
+        .text-center {
+            padding-bottom: 15px;
+            border-bottom: 1px solid #E6EBE0;
+            text-align: center;
+            margin: 1px auto 0px;
+        }
+
+        .left-nav {
+            list-style-type: none;
+        }
+
+        .left-nav>li>a {
+            display: block;
+            padding: 15px 0px;
+            background-color: #9BC1BC;
+            padding-left: 30px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .left-nav>li>a:hover {
+            background-color: #5f9c94;
+        }
+    </style>
 </head>
-<body>
-    <!-- html comment -->
+
+<body class="main-container-grid">
+    <div class="r1">
+        <h2>Gourmet Coffee & Tea</h2>
+    </div>
+    <div class="r2 three-column">
+        <div class="c1">
+            <h2 class="text-center">Navigation</h2>
+            <ul class="left-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact_us.html">Contact Us</a></li>
+                <li><a href="./Product_grid.html">Product Grid</a></li>
+            </ul>
+        </div>
+        <div class="c2">
+            <h2 class="text-center h2-content">Recent Products</h2>
+            <img src="./img/image_1.jpeg">
+            <img src="./img/image_2.jpeg">
+            <img src="./img/image_3.jpeg">
+            <img src="./img/image_4.jpeg">
+            <img src="./img/image_5.jpeg">
+        </div>
+        <div class="c3">
+            <h2 class="text-center">Recent Products</h2>
+        </div>
+    </div>
+    <div class="r3">
+        Copyright 2021 - For educational purpose only! No orders shall be fulfilled!
+    </div>
 </body>
+
 </html>
